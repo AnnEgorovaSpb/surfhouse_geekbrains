@@ -53,4 +53,18 @@
   font-weight: 900;
   font-style: italic;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */

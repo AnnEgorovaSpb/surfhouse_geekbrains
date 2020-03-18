@@ -55,3 +55,19 @@
     font-weight: 900;
     font-style: italic;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $colorMain-bg;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
