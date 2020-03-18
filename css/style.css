@@ -67,4 +67,10 @@ img {
 a {
   text-decoration: none;
 }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*# sourceMappingURL=style.css.map */

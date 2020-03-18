@@ -70,4 +70,8 @@ a {
     text-decoration: none;
 }
 
-
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
