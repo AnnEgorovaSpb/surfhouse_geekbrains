@@ -196,3 +196,62 @@ a {
         border: 2px solid transparent;
     }
 }
+
+@media (max-width: 1170px) {
+    .header__container {
+        max-width: 100%;
+    }
+        
+    .welcome {
+        left: 20px;
+        bottom: 170px;
+    }
+
+    .funride {
+        right: 20px;
+        bottom: 170px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        max-width: 100%;
+        min-height: auto;
+        padding: 20px;
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__logo-link {
+        position: static;
+        margin: 0 0 20px 0;
+    }
+
+    .social {
+        width: 50%;
+        position: static;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__link {
+            margin-right: 40px;
+        }
+    }
+
+    .welcome {
+        width: 450px;
+        position: static;
+        margin: 0 auto 30px;
+    }
+
+    .funride {
+        width: 450px;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
