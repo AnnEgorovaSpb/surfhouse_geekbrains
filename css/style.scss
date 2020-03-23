@@ -255,3 +255,202 @@ a {
     }
 }
 
+.content {
+    margin-top: -20px;
+}
+
+.content-container {
+    max-width: $widthContainer;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-menu-btn,
+.mobile-menu-checkbox {
+    display: none;
+}
+
+.mobile-menu-checkbox:checked ~.nav {
+    width: 100%;
+}
+
+.nav {
+    max-width: 270px;
+    margin: 0 0 30px 0;
+    background-color: #26d2fc;
+
+    &__link {
+        display: block;
+        padding: 0 0 0 40px;
+        text-decoration: none;
+        font-family: $fontFamylySecond;
+        font-size: 14px;
+        line-height: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #000000;
+
+        &:hover {
+            background-color: #000;
+            color: #ffffff;
+        }
+
+        &:active {
+            background-color: #26d2fc;
+            color: #000000;
+        }
+    }
+
+    &__menu {
+        padding: 10px 0 10px 40px;
+        box-sizing: border-box;
+        background-color: #000;
+        color: #ffffff;
+    }
+}
+
+.now-is-open {
+    width: 270px;
+    height: 300px;
+    background-color: #e0e0e0;
+
+    &__txt {
+        display: block;
+        width: 109px;
+        padding: 129px 19px 0 142px;
+        box-sizing: border-box;
+        font-family: $fontFamylyFirst;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #333333;
+    }
+}
+
+.content-block-r {
+    max-width: 870px;
+    margin-left: 30px;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+.product {
+    margin: 0 0 77px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:last-of-type {
+        margin: 0;
+    }
+
+    &__title {
+        display: block;
+        width: 100%;
+        margin: 0 0 31px 0;
+        font-family: $fontFamylySecond;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase;
+        color: #707070;
+    }
+}
+
+.product-item {
+    max-width: 270px;
+    margin: 0 30px 0 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+
+    &:nth-of-type(3n) {
+        margin-right: 0;
+    }
+    
+    &:nth-of-type(n+4) {
+        margin-top: 30px;
+    }
+
+    &__new:before {
+        content: "new";
+        display: block;
+        width: 46px;
+        height: 46px;
+        font-family: $fontFamylySecond;
+        font-size: 11px;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 0 0 20px;
+        box-sizing: border-box;
+        background-image: url(../img/corner_11349.png);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__hot:before {
+        content: "hot";
+        display: block;
+        width: 46px;
+        height: 46px;
+        font-family: $fontFamylySecond;
+        font-size: 11px;
+        color: #000;
+        text-transform: uppercase;
+        padding: 10px 0 0 20px;
+        box-sizing: border-box;
+        background-image: url(../img/corner_11353.png);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__photo {
+        width: 250px;
+        height: 235px;
+        display: block;
+        margin-bottom: 19px;
+        background-color: #eaeaea;
+    }
+    
+    &__name {
+        display: block;
+        width: 140px;
+        font-family: $fontFamylySecond;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 900;
+        font-style: italic;
+        color: #333333;
+        float: left;
+    }
+
+    &_wrp {
+        float: right;
+    }
+
+    &_price {
+        display: block;
+        font-family: $fontFamylySecond;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 900;
+        font-style: italic;
+        color: #333333;
+        float: right;
+    }
+
+    &__price--old {
+        font-size: 14px;
+        color: #e24602;
+        text-decoration: line-through;
+        float: none;
+    }
+}
+
